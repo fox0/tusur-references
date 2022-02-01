@@ -60,7 +60,7 @@ def do(text: str) -> str:
                 ls.append('no.\xa0' + i['number'])
             if 'pages' in i:
                 ls.append('pp.\xa0' + i['pages'].replace('--', '–'))
-            suffix = '.\xa0— '.join(ls)
+            suffix = '.\xa0– '.join(ls)
 
             result.append(f'{prefix}{suffix}')
         else:
